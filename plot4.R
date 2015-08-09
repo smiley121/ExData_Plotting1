@@ -45,7 +45,7 @@ plot(hpc$datetime,hpc$Sub_metering_1, type="l", xlab="", ylab="Energy sub meteri
 lines(hpc$datetime,hpc$Sub_metering_2,col="red")
 lines(hpc$datetime,hpc$Sub_metering_3,col="blue")
 
-legend("topright", col=c("black", "red", "blue"), c("Sub_metering_1  ", "Sub_metering_2  ", "Sub_metering_3  "),lty=1,bty="n")
+legend("topright", col=c("black", "red", "blue"), c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),lty=1,bty="n")
 
 ##Global reactive power
 
