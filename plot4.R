@@ -28,9 +28,8 @@ hpc<-mutate(hpc,Sub_metering_3=as.numeric(as.character(Sub_metering_3)))
 
 ##Set up the multiple plots
 
-par(mfrow=c(2,2))
-
 png("plot4.png")
+par(mfrow=c(2,2))
 
 ##Global active power
 
@@ -46,7 +45,7 @@ plot(hpc$datetime,hpc$Sub_metering_1, type="l", xlab="", ylab="Energy sub meteri
 lines(hpc$datetime,hpc$Sub_metering_2,col="red")
 lines(hpc$datetime,hpc$Sub_metering_3,col="blue")
 
-legend("topright", col=c("black", "red", "blue"), c("Sub_metering_1  ", "Sub_metering_2  ", "Sub_metering_3  "),lty=1,bty="n",cex=0.5)
+legend("topright", col=c("black", "red", "blue"), c("Sub_metering_1  ", "Sub_metering_2  ", "Sub_metering_3  "),lty=1,bty="n")
 
 ##Global reactive power
 
